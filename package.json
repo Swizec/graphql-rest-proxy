@@ -1,0 +1,23 @@
+{
+    "name": "yup-graphql-proxy",
+    "version": "1.0.0",
+    "description": "Proof of concept using GraphQL with an old REST API server",
+    "main": "index.js",
+    "author": "Swizec Teller <swizec@swizec.com>",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc",
+        "deploy": "npm run build && serverless deploy"
+    },
+    "dependencies": {
+        "@types/aws-lambda": "^8.10.46",
+        "@types/aws-sdk": "^2.7.0",
+        "@types/isomorphic-fetch": "^0.0.35",
+        "apollo-server": "^2.11.0",
+        "apollo-server-lambda": "^2.11.0",
+        "aws-lambda": "^1.0.5",
+        "graphql": "^14.6.0",
+        "graphql-tools": "^4.0.7",
+        "isomorphic-fetch": "^2.2.1"
+    }
+}
